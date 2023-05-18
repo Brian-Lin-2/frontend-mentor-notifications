@@ -15,8 +15,10 @@ export default {
         'l-grayish-blue-2': 'hsl(205, 33%, 90%)',
         'grayish-blue': 'hsl(219, 14%, 63%)',
         'dark-grayish-blue': 'hsl(219, 12%, 42%)',
-        'vd-grayish-blue': 'hsl(224, 21%, 14%)',
-
+        'very-dark-blue': 'hsl(224, 21%, 14%)',
+      },
+      fontFamily: {
+        'pj-sans': ['Plus Jakarta Sans', 'sans-serif'],
       }
     },
   },

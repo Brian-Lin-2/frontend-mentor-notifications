@@ -48,8 +48,8 @@ export default function App() {
 
   return (
     <>
-      <div>
-        <h1>Notifications <span>3</span></h1>
+      <div className="font-pj-sans flex justify-between">
+        <h1 className="font-extrabold text-xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
         <button>Mark all as read</button>
       </div>
     </>
