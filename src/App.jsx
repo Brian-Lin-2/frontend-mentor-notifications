@@ -60,14 +60,14 @@ export default function App() {
       name: "Anna Kim",
       profile: "/assets/images/avatar-anna-kim.webp",
       action: "left the group",
-      club: "Chess Club",
+      group: "Chess Club",
       time: "2 weeks ago",
       unread: 'false',
     },
   ]
 
   return (
-    <>
+    <div className="w-96">
       <div className="font-pj-sans flex justify-between">
         <h1 className="font-extrabold text-xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
         <button>Mark all as read</button>
@@ -76,6 +76,6 @@ export default function App() {
       {notifications.map(notification => {
         return <Notification key={crypto.randomUUID()} notification={notification} />
       })}
-    </>
+    </div>
   );
 }

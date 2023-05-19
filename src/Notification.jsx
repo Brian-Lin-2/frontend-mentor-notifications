@@ -1,69 +1,68 @@
 function Reaction({ notification }) {
   return (
-    <>
-      <img src={notification.profile} />
+    <div className="flex p-3 border items-start gap-3 leading-5">
+      <img className="w-10" src={notification.profile} />
       
       <div>
-        <p><span>{notification.name}</span> {notification.action} <span>{notification.post}</span></p>
-        <footer>{notification.time}</footer>
+        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action} <span className="font-bold pl-0.5">{notification.post}</span></p>
+        <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
-    </>
+    </div>
   );
 }
 
 function Follow({ notification }) {
   return (
-    <>
-      <img src={notification.profile} />
+    <div className="flex p-3 border items-start gap-3 leading-5">
+      <img className="w-10" src={notification.profile} />
       
       <div>
-        <p><span>{notification.name}</span> {notification.action}</p>
-        <footer>{notification.time}</footer>
+        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action}</p>
+        <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
-    </>
+    </div>
   );
 }
 
 function Group({ notification }) {
   return (
-    <>
-      <img src={notification.profile} />
+    <div className="flex p-3 border items-start gap-3 leading-5">
+      <img className="w-10" src={notification.profile} />
       
       <div>
-        <p><span>{notification.name}</span> {notification.action} <span>{notification.group}</span></p>
-        <footer>{notification.time}</footer>
+        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action} <span className="text-blue font-bold">{notification.group}</span></p>
+        <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
-    </>
+    </div>
   );
 }
 
 function Comment({ notification }) {
   return (
-    <>
-      <img src={notification.profile} />
+    <div className="flex p-3 border items-start gap-3 leading-5">
+      <img className="w-10" src={notification.profile} />
       
       <div>
-        <p><span>{notification.name}</span> {notification.action}</p>
-        <footer>{notification.time}</footer>
+        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action}</p>
+        <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
 
-      <img src={notification.image} />
-    </>
+      <img className="w-10" src={notification.image} />
+    </div>
   );
 }
 
 function Message({ notification }) {
   return (
-    <>
-      <img src={notification.profile} />
+    <div className="flex p-3 border items-start gap-3 leading-5">
+      <img className="w-10" src={notification.profile} />
       
       <div>
-        <p><span>{notification.name}</span> {notification.action}</p>
-        <footer>{notification.time}</footer>
+        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action}</p>
+        <footer className="text-grayish-blue">{notification.time}</footer>
+        <p className="text-dark-grayish-blue border p-3 mt-3">{notification.message}</p>
       </div>
-
-      <p>{notification.message}</p>
-    </>
+    </div>
   );
 }
 
