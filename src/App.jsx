@@ -68,7 +68,7 @@ export default function App() {
 
   return (
     <div className="lg:bg-vl-grayish-blue flex justify-center">
-        <div className="lg:w-7/12 lg:bg-white lg:m-10 lg:rounded-xl lg:p-5">
+        <div className="lg:w-1/2 lg:bg-white lg:m-16 lg:rounded-xl lg:p-5">
         <div className="font-pj-sans flex justify-between p-3">
           <h1 className="font-extrabold text-2xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
           <button className="text-dark-grayish-blue">Mark all as read</button>
