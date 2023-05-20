@@ -1,10 +1,16 @@
 function Reaction({ notification }) {
   return (
-    <div className="flex p-3 border items-start gap-3 leading-5">
+    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action} <span className="font-bold pl-0.5">{notification.post}</span></p>
+        <p className="text-dark-grayish-blue">
+          <span className="font-bold text-black pr-1.5">{notification.name}</span>
+          {notification.action}
+          <span className="font-bold pl-1.5">{notification.post}</span>
+          {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
+        </p>
+
         <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
     </div>
@@ -13,11 +19,16 @@ function Reaction({ notification }) {
 
 function Follow({ notification }) {
   return (
-    <div className="flex p-3 border items-start gap-3 leading-5">
+    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action}</p>
+        <p className="text-dark-grayish-blue">
+          <span className="font-bold text-black pr-1.5">{notification.name}</span> 
+          {notification.action}
+          {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
+        </p>
+
         <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
     </div>
@@ -26,11 +37,17 @@ function Follow({ notification }) {
 
 function Group({ notification }) {
   return (
-    <div className="flex p-3 border items-start gap-3 leading-5">
+    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action} <span className="text-blue font-bold">{notification.group}</span></p>
+        <p className="text-dark-grayish-blue">
+          <span className="font-bold text-black pr-1.5">{notification.name}</span> 
+          {notification.action} 
+          <span className="text-blue font-bold ml-1.5">{notification.group}</span>
+          {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
+        </p>
+
         <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
     </div>
@@ -39,11 +56,16 @@ function Group({ notification }) {
 
 function Comment({ notification }) {
   return (
-    <div className="flex p-3 border items-start gap-3 leading-5">
+    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action}</p>
+        <p className="text-dark-grayish-blue">
+          <span className="font-bold text-black pr-1.5">{notification.name}</span>
+          {notification.action}
+          {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
+        </p>
+
         <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
 
@@ -54,11 +76,16 @@ function Comment({ notification }) {
 
 function Message({ notification }) {
   return (
-    <div className="flex p-3 border items-start gap-3 leading-5">
+    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue"><span className="font-bold text-black pr-0.5">{notification.name}</span> {notification.action}</p>
+        <p className="text-dark-grayish-blue">
+          <span className="font-bold text-black pr-1.5">{notification.name}</span>
+          {notification.action}
+          {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
+        </p>
+
         <footer className="text-grayish-blue">{notification.time}</footer>
         <p className="text-dark-grayish-blue border p-3 mt-3">{notification.message}</p>
       </div>
