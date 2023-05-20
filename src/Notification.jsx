@@ -1,8 +1,8 @@
 function Reaction({ notification }) {
-  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+  let style = "flex p-4 m-3 items-start gap-3 leading-5";
 
   if (notification.unread) {
-    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+    style = "flex p-4 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
   }
 
   return (
@@ -24,10 +24,10 @@ function Reaction({ notification }) {
 }
 
 function Follow({ notification }) {
-  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+  let style = "flex p-4 m-3 items-start gap-3 leading-5";
 
   if (notification.unread) {
-    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+    style = "flex p-4 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
   }
 
   return (
@@ -48,10 +48,10 @@ function Follow({ notification }) {
 }
 
 function Group({ notification }) {
-  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+  let style = "flex p-4 m-3 items-start gap-3 leading-5";
 
   if (notification.unread) {
-    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+    style = "flex p-4 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
   }
 
   return (
@@ -73,24 +73,26 @@ function Group({ notification }) {
 }
 
 function Comment({ notification }) {
-  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+  let style = "flex p-3 m-3 items-start justify-between gap-3 leading-5";
 
   if (notification.unread) {
-    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+    style = "flex p-3 m-3 items-start justify-between gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
   }
 
   return (
     <div className={style}>
-      <img className="w-10" src={notification.profile} />
-      
-      <div>
-        <p className="text-dark-grayish-blue">
-          <span className="font-bold text-black pr-1.5">{notification.name}</span>
-          {notification.action}
-          {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
-        </p>
+      <div className="flex items-center gap-3">
+        <img className="w-10" src={notification.profile} />
+        
+        <div>
+          <p className="text-dark-grayish-blue">
+            <span className="font-bold text-black pr-1.5">{notification.name}</span>
+            {notification.action}
+            {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
+          </p>
 
-        <footer className="text-grayish-blue">{notification.time}</footer>
+          <footer className="text-grayish-blue">{notification.time}</footer>
+        </div>
       </div>
 
       <img className="w-10" src={notification.image} />
@@ -99,10 +101,10 @@ function Comment({ notification }) {
 }
 
 function Message({ notification }) {
-  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+  let style = "flex p-4 m-3 items-start gap-3 leading-5";
 
   if (notification.unread) {
-    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+    style = "flex p-4 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
   }
 
   return (

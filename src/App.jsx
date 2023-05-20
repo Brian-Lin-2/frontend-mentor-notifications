@@ -67,15 +67,17 @@ export default function App() {
   ]
 
   return (
-    <div className="w-96">
-      <div className="font-pj-sans flex justify-between p-3">
-        <h1 className="font-extrabold text-xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
-        <button className="text-dark-grayish-blue">Mark all as read</button>
-      </div>
+    <div className="lg:bg-vl-grayish-blue flex justify-center">
+        <div className="lg:w-7/12 lg:bg-white lg:m-10 lg:rounded-xl lg:p-5">
+        <div className="font-pj-sans flex justify-between p-3">
+          <h1 className="font-extrabold text-2xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
+          <button className="text-dark-grayish-blue">Mark all as read</button>
+        </div>
 
-      {notifications.map(notification => {
-        return <Notification key={crypto.randomUUID()} notification={notification} />
-      })}
+        {notifications.map(notification => {
+          return <Notification key={crypto.randomUUID()} notification={notification} />
+        })}
+      </div>
     </div>
   );
 }
