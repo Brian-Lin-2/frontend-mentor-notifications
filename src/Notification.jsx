@@ -1,6 +1,12 @@
 function Reaction({ notification }) {
+  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+
+  if (notification.unread) {
+    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+  }
+
   return (
-    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
+    <div className={style}>
       <img className="w-10" src={notification.profile} />
       
       <div>
@@ -18,8 +24,14 @@ function Reaction({ notification }) {
 }
 
 function Follow({ notification }) {
+  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+
+  if (notification.unread) {
+    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+  }
+
   return (
-    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
+    <div className={style}>
       <img className="w-10" src={notification.profile} />
       
       <div>
@@ -36,8 +48,14 @@ function Follow({ notification }) {
 }
 
 function Group({ notification }) {
+  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+
+  if (notification.unread) {
+    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+  }
+
   return (
-    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
+    <div className={style}>
       <img className="w-10" src={notification.profile} />
       
       <div>
@@ -55,8 +73,14 @@ function Group({ notification }) {
 }
 
 function Comment({ notification }) {
+  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+
+  if (notification.unread) {
+    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+  }
+
   return (
-    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
+    <div className={style}>
       <img className="w-10" src={notification.profile} />
       
       <div>
@@ -75,8 +99,14 @@ function Comment({ notification }) {
 }
 
 function Message({ notification }) {
+  let style = "flex p-3 m-3 items-start gap-3 leading-5";
+
+  if (notification.unread) {
+    style = "flex p-3 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
+  }
+
   return (
-    <div className="flex p-3 my-3 border items-start gap-3 leading-5">
+    <div className={style}>
       <img className="w-10" src={notification.profile} />
       
       <div>

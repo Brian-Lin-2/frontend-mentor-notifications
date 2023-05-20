@@ -68,9 +68,9 @@ export default function App() {
 
   return (
     <div className="w-96">
-      <div className="font-pj-sans flex justify-between">
+      <div className="font-pj-sans flex justify-between p-3">
         <h1 className="font-extrabold text-xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
-        <button>Mark all as read</button>
+        <button className="text-dark-grayish-blue">Mark all as read</button>
       </div>
 
       {notifications.map(notification => {
