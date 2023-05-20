@@ -13,7 +13,7 @@ function Reaction({ notification }) {
         <p className="text-dark-grayish-blue">
           <span className="font-bold text-black pr-1.5">{notification.name}</span>
           {notification.action}
-          <span className="font-bold pl-1.5">{notification.post}</span>
+          <span className="font-bold pl-1.5 lg:hover:text-blue lg:hover:cursor-pointer">{notification.post}</span>
           {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
         </p>
 
@@ -62,7 +62,7 @@ function Group({ notification }) {
         <p className="text-dark-grayish-blue">
           <span className="font-bold text-black pr-1.5">{notification.name}</span> 
           {notification.action} 
-          <span className="text-blue font-bold ml-1.5">{notification.group}</span>
+          <span className="text-blue font-bold ml-1.5 lg:hover:cursor-pointer">{notification.group}</span>
           {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
         </p>
 
@@ -95,7 +95,7 @@ function Comment({ notification }) {
         </div>
       </div>
 
-      <img className="w-10" src={notification.image} />
+      <img className="w-10 border-2 border-white lg:hover:cursor-pointer lg:hover:border-l-grayish-blue-1 lg:hover:rounded-lg" src={notification.image} />
     </div>
   );
 }
@@ -119,7 +119,7 @@ function Message({ notification }) {
         </p>
 
         <footer className="text-grayish-blue">{notification.time}</footer>
-        <p className="text-dark-grayish-blue border p-3 mt-3">{notification.message}</p>
+        <p className="text-dark-grayish-blue border p-4 mt-3 rounded lg:hover:bg-l-grayish-blue-1 lg:hover:cursor-pointer lg:hover:border-l-grayish-blue-1">{notification.message}</p>
       </div>
     </div>
   );
