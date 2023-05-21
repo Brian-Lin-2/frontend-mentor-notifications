@@ -7,7 +7,7 @@ function Activity({ notification }) {
 
   return (
     <div className={style}>
-      <img className="w-10" src={notification.profile} />
+      <img className="w-10" src={notification.profile} alt="" />
       
       <div>
         <div className="text-dark-grayish-blue">
@@ -32,7 +32,7 @@ function Follow({ notification }) {
 
   return (
     <div className={style}>
-      <img className="w-10" src={notification.profile} />
+      <img className="w-10" src={notification.profile} alt="" />
       
       <div>
         <div className="text-dark-grayish-blue">
@@ -57,7 +57,7 @@ function Comment({ notification }) {
   return (
     <div className={style}>
       <div className="flex items-center gap-3">
-        <img className="w-10" src={notification.profile} />
+        <img className="w-10" src={notification.profile} alt="" />
         
         <div>
           <div className="text-dark-grayish-blue">
@@ -84,7 +84,7 @@ function Message({ notification }) {
 
   return (
     <div className={style}>
-      <img className="w-10" src={notification.profile} />
+      <img className="w-10" src={notification.profile} alt="" />
       
       <div>
         <div className="text-dark-grayish-blue">
