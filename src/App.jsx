@@ -48,7 +48,7 @@ export default function App() {
       unread: false,
     },
     {
-      type: "Reaction",
+      type: "Activity",
       name: "Nathan Peterson",
       profile: "/assets/images/avatar-nathan-peterson.webp",
       action: "reacted to your recent post",
