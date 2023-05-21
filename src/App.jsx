@@ -68,6 +68,9 @@ export default function App() {
   ]
 
   const [notif, setNotif] = useState(notifications);
+  let count = 0;
+
+  notif.map(notification => notification.unread ? count++ : count);
 
   function handleRead() {
     setNotif(notif.map(notification => {
@@ -79,7 +82,7 @@ export default function App() {
     <div className="lg:bg-vl-grayish-blue flex justify-center">
         <div className="lg:w-1/2 lg:bg-white lg:m-16 lg:rounded-xl lg:p-5">
         <div className="font-pj-sans flex justify-between p-3">
-          <h1 className="font-extrabold text-2xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
+          <h1 className="font-extrabold text-2xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">{count}</span></h1>
           <button className="text-dark-grayish-blue lg:hover:text-blue" onClick={handleRead}>Mark all as read</button>
         </div>
 
