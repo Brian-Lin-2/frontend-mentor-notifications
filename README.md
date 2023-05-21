@@ -33,7 +33,7 @@ Desktop Design:
 <br/><img width="500" alt="image" src="https://github.com/Brian-Lin-2/frontend-mentor-notifications/assets/19761406/78e964ae-2713-48a6-8c72-50081e6f1205">
 
 Mobile Design:
-<br/><img width="500" alt="image" src="https://github.com/Brian-Lin-2/frontend-mentor-notifications/assets/19761406/417a14da-0e48-40a4-b94b-4dd7bb5449bd">
+<br/><img width="200" alt="image" src="https://github.com/Brian-Lin-2/frontend-mentor-notifications/assets/19761406/417a14da-0e48-40a4-b94b-4dd7bb5449bd">
 
 ### Links
 
