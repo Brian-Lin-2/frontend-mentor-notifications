@@ -52,7 +52,7 @@ export default function App() {
       name: "Nathan Peterson",
       profile: "/assets/images/avatar-nathan-peterson.webp",
       action: "reacted to your recent post",
-      post: "5 end-game strategies to increase your win rate",
+      activity: "5 end-game strategies to increase your win rate",
       time: "2 weeks ago",
       unread: false,
     },
