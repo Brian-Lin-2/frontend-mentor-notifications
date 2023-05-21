@@ -1,4 +1,5 @@
 import Notification from './Notification';
+import { useState } from 'react';
 
 export default function App() {
   const notifications = [
@@ -66,12 +67,22 @@ export default function App() {
     },
   ]
 
+  // const [readAll, setReadAll] = useState(false);
+
+  // function handleRead() {
+  //   notifications.map(notification => {
+  //     return notification.unread = false;
+  //   })
+
+  //   setReadAll(true);
+  // }
+
   return (
     <div className="lg:bg-vl-grayish-blue flex justify-center">
         <div className="lg:w-1/2 lg:bg-white lg:m-16 lg:rounded-xl lg:p-5">
         <div className="font-pj-sans flex justify-between p-3">
           <h1 className="font-extrabold text-2xl flex items-center gap-3">Notifications <span className="text-white text-base bg-blue px-2.5 rounded">3</span></h1>
-          <button className="text-dark-grayish-blue hover:text-blue">Mark all as read</button>
+          <button className="text-dark-grayish-blue lg:hover:text-blue">Mark all as read</button>
         </div>
 
         {notifications.map(notification => {

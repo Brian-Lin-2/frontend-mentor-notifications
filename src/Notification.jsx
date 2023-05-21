@@ -10,12 +10,12 @@ function Activity({ notification }) {
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue">
+        <div className="text-dark-grayish-blue">
           <span className="font-bold text-black pr-1.5">{notification.name}</span>
           {notification.action}
           <span className="font-bold pl-1.5 lg:hover:text-blue lg:hover:cursor-pointer">{notification.activity}</span>
           {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
-        </p>
+        </div>
 
         <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
@@ -35,36 +35,11 @@ function Follow({ notification }) {
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue">
+        <div className="text-dark-grayish-blue">
           <span className="font-bold text-black pr-1.5">{notification.name}</span> 
           {notification.action}
           {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
-        </p>
-
-        <footer className="text-grayish-blue">{notification.time}</footer>
-      </div>
-    </div>
-  );
-}
-
-function Group({ notification }) {
-  let style = "flex p-4 m-3 items-start gap-3 leading-5";
-
-  if (notification.unread) {
-    style = "flex p-4 m-3 items-start gap-3 leading-5 bg-vl-grayish-blue rounded-lg"
-  }
-
-  return (
-    <div className={style}>
-      <img className="w-10" src={notification.profile} />
-      
-      <div>
-        <p className="text-dark-grayish-blue">
-          <span className="font-bold text-black pr-1.5">{notification.name}</span> 
-          {notification.action} 
-          <span className="text-blue font-bold ml-1.5 lg:hover:cursor-pointer">{notification.group}</span>
-          {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
-        </p>
+        </div>
 
         <footer className="text-grayish-blue">{notification.time}</footer>
       </div>
@@ -85,11 +60,11 @@ function Comment({ notification }) {
         <img className="w-10" src={notification.profile} />
         
         <div>
-          <p className="text-dark-grayish-blue">
+          <div className="text-dark-grayish-blue">
             <span className="font-bold text-black pr-1.5">{notification.name}</span>
             {notification.action}
             {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
-          </p>
+          </div>
 
           <footer className="text-grayish-blue">{notification.time}</footer>
         </div>
@@ -112,11 +87,11 @@ function Message({ notification }) {
       <img className="w-10" src={notification.profile} />
       
       <div>
-        <p className="text-dark-grayish-blue">
+        <div className="text-dark-grayish-blue">
           <span className="font-bold text-black pr-1.5">{notification.name}</span>
           {notification.action}
           {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
-        </p>
+        </div>
 
         <footer className="text-grayish-blue">{notification.time}</footer>
         <p className="text-dark-grayish-blue border p-4 mt-3 rounded lg:hover:bg-l-grayish-blue-1 lg:hover:cursor-pointer lg:hover:border-l-grayish-blue-1">{notification.message}</p>
