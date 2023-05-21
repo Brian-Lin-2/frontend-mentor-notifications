@@ -3,11 +3,11 @@ import Notification from './Notification';
 export default function App() {
   const notifications = [
     {
-      type: "Reaction",
+      type: "Activity",
       name: "Mark Webber",
       profile: "/assets/images/avatar-mark-webber.webp",
       action: "reacted to your recent post",
-      post: "My first tournament today!",
+      activity: "My first tournament today!",
       time: "1m ago",
       unread: true,
     },
@@ -20,11 +20,11 @@ export default function App() {
       unread: true,
     },
     {
-      type: "Group",
+      type: "Activity",
       name: "Jacob Thompson",
       profile: "/assets/images/avatar-jacob-thompson.webp",
       action: "has joined your group",
-      group: "Chess Club",
+      activity: "Chess Club",
       time: "1 day ago",
       unread: true,
     },
@@ -56,11 +56,11 @@ export default function App() {
       unread: false,
     },
     {
-      type: "Group",
+      type: "Activity",
       name: "Anna Kim",
       profile: "/assets/images/avatar-anna-kim.webp",
       action: "left the group",
-      group: "Chess Club",
+      activity: "Chess Club",
       time: "2 weeks ago",
       unread: false,
     },

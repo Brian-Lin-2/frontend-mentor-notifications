@@ -1,4 +1,4 @@
-function Reaction({ notification }) {
+function Activity({ notification }) {
   let style = "flex p-4 m-3 items-start gap-3 leading-5";
 
   if (notification.unread) {
@@ -13,7 +13,7 @@ function Reaction({ notification }) {
         <p className="text-dark-grayish-blue">
           <span className="font-bold text-black pr-1.5">{notification.name}</span>
           {notification.action}
-          <span className="font-bold pl-1.5 lg:hover:text-blue lg:hover:cursor-pointer">{notification.post}</span>
+          <span className="font-bold pl-1.5 lg:hover:text-blue lg:hover:cursor-pointer">{notification.activity}</span>
           {notification.unread && <div className="ml-1.5 w-2.5 h-2.5 bg-red rounded-full inline-block"></div>}
         </p>
 
@@ -126,16 +126,12 @@ function Message({ notification }) {
 }
 
 export default function Notification({ notification }) {
-  if (notification.type == 'Reaction') {
-    return <Reaction notification={notification} />
+  if (notification.type == 'Activity') {
+    return <Activity notification={notification} />
   }
 
   else if (notification.type == 'Follow') {
     return <Follow notification={notification} />
-  }
-
-  else if (notification.type == 'Group') {
-    return <Group notification={notification} />
   }
   
   else if (notification.type == 'Comment') {
